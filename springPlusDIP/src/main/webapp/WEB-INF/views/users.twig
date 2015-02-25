@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>User list</title>
+</head>
+<body>
+<h1>User list:</h1>
+{% if user_list %}
+    {% for u in user_list %}
+        {{ u.toString }}<br/>
+    {% endfor %}
+{% endif %}
+</body>
+</html>
